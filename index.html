@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Test Answer Sheet & Solutions</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --success: #16a34a;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Kalpurush", "SolaimanLipi", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 24px;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 28px 0 16px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        /* Quick Answer Grid */
+        .key-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .key-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 8px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .key-card span {
+            font-weight: bold;
+            color: var(--success);
+        }
+
+        /* Question Cards */
+        .q-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .q-header {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .q-num {
+            color: var(--primary);
+            margin-right: 6px;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .option {
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            background: #f1f5f9;
+        }
+
+        .option.correct {
+            background: #dcfce7;
+            border-color: #86efac;
+            color: #14532d;
+            font-weight: 600;
+        }
+
+        .explanation {
+            font-size: 13px;
+            color: var(--text-muted);
+            background: #f8fafc;
+            border-left: 3px solid var(--primary);
+            padding: 6px 10px;
+            margin-top: 8px;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body { background: #fff; padding: 0; }
+            .q-card { break-inside: avoid; border: 1px solid #ccc; box-shadow: none; }
+            .section-title { page-break-after: avoid; }
+        }
+
+        @media (max-width: 480px) {
+            .options { grid-template-columns: 1fr; }
+            body { padding: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Model Test Answer Sheet & Solutions</h1>
+        <div class="subtitle">Physics • Chemistry • Higher Math • Biology</div>
+    </header>
+
+    <div class="section-title"> Quick Answer Key</div>
+    <div class="key-grid">
+        <div class="key-card">Q1: <span>A</span></div>
+        <div class="key-card">Q2: <span>A</span></div>
+        <div class="key-card">Q3: <span>D</span></div>
+        <div class="key-card">Q4: <span>B</span></div>
+        <div class="key-card">Q5: <span>A</span></div>
+        <div class="key-card">Q6: <span>D</span></div>
+        <div class="key-card">Q7: <span>B</span></div>
+        <div class="key-card">Q8: <span>C</span></div>
+        <div class="key-card">Q9: <span>B</span></div>
+        <div class="key-card">Q10: <span>D</span></div>
+        <div class="key-card">Q11: <span>D</span></div>
+        <div class="key-card">Q12: <span>B</span></div>
+        <div class="key-card">Q13: <span>A</span></div>
+        <div class="key-card">Q14: <span>A</span></div>
+        <div class="key-card">Q15: <span>A</span></div>
+        <div class="key-card">Q16: <span>B</span></div>
+        <div class="key-card">Q17: <span>B</span></div>
+        <div class="key-card">Q18: <span>D</span></div>
+        <div class="key-card">Q19: <span>C</span></div>
+        <div class="key-card">Q20: <span>D</span></div>
+        <div class="key-card">Q21: <span>A</span></div>
+        <div class="key-card">Q22: <span>A</span></div>
+        <div class="key-card">Q23: <span>A</span></div>
+        <div class="key-card">Q24: <span>D</span></div>
+        <div class="key-card">Q25: <span>B</span></div>
+        <div class="key-card">Q26: <span>C</span></div>
+        <div class="key-card">Q27: <span>C</span></div>
+        <div class="key-card">Q28: <span>D</span></div>
+        <div class="key-card">Q29: <span>D</span></div>
+        <div class="key-card">Q30: <span>C</span></div>
+        <div class="key-card">Q31: <span>D</span></div>
+        <div class="key-card">Q32: <span>D</span></div>
+        <div class="key-card">Q33: <span>C</span></div>
+        <div class="key-card">Q34: <span>D</span></div>
+        <div class="key-card">Q35: <span>C</span></div>
+        <div class="key-card">Q36: <span>B</span></div>
+        <div class="key-card">Q37: <span>B</span></div>
+        <div class="key-card">Q38: <span>D</span></div>
+        <div class="key-card">Q40: <span>D</span></div>
+        <div class="key-card">Q41: <span>B</span></div>
+        <div class="key-card">Q42: <span>C</span></div>
+        <div class="key-card">Q43: <span>D</span></div>
+        <div class="key-card">Q44: <span>D</span></div>
+        <div class="key-card">Q45: <span>D</span></div>
+        <div class="key-card">Q46: <span>B</span></div>
+        <div class="key-card">Q47: <span>D</span></div>
+        <div class="key-card">Q48: <span>D</span></div>
+        <div class="key-card">Q49: <span>D</span></div>
+        <div class="key-card">Q50: <span>A</span></div>
+        <div class="key-card">Q51: <span>C</span></div>
+        <div class="key-card">Q52: <span>B</span></div>
+        <div class="key-card">Q53: <span>A</span></div>
+        <div class="key-card">Q54: <span>A</span></div>
+        <div class="key-card">Q55: <span>A</span></div>
+        <div class="key-card">Q56: <span>B</span></div>
+        <div class="key-card">Q57: <span>C</span></div>
+        <div class="key-card">Q58: <span>C</span></div>
+        <div class="key-card">Q59: <span>D</span></div>
+        <div class="key-card">Q60: <span>A</span></div>
+    </div>
+
+    <!-- Physics Section -->
+    <div class="section-title"> Physics & Vector Mechanics</div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">1.</span> ভেক্টর বিভাজনের দৃষ্টান্ত নয় কোনটি?</div>
+        <div class="options">
+            <div class="option correct">A) চলন্ত গাড়িতে পড়ন্ত বৃষ্টি</div>
+            <div class="option">B) লন রোলার চালনা</div>
+            <div class="option">C) গুণ টানা নৌকার গতি</div>
+            <div class="option">D) সবগুলো</div>
+        </div>
+        <div class="explanation">💡 চলন্ত গাড়িতে বৃষ্টি পড়া আপেক্ষিক বেগের উদাহরণ, ভেক্টর বিভাজনের নয়।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">2.</span> সরণ পাওয়া যায়—</div>
+        <div class="options">
+            <div class="option correct">A) বেগ-সময় লেখচিত্রের নিচের ক্ষেত্রফল থেকে</div>
+            <div class="option">B) ত্বরণ-সময় লেখচিত্রের নিচের ক্ষেত্রফল থেকে</div>
+            <div class="option">C) বেগ-সময় লেখচিত্রের ঢাল থেকে</div>
+            <div class="option">D) ত্বরণ-সময় লেখচিত্রের ঢাল থেকে</div>
+        </div>
+        <div class="explanation">💡 s = ∫ v dt, তাই বেগ-সময় গ্রাফের ক্ষেত্রফল সরণ নির্দেশ করে।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">3.</span> একটি গতিশীল বস্তুর সরণের সমীকরণ x = 2t + 3t² হলে, t = 2 s পর বেগ কত?</div>
+        <div class="options">
+            <div class="option">A) 8 ms⁻¹</div>
+            <div class="option">B) 10 ms⁻¹</div>
+            <div class="option">C) 12 ms⁻¹</div>
+            <div class="option correct">D) 14 ms⁻¹</div>
+        </div>
+        <div class="explanation">💡 v = dx/dt = 2 + 6t ⇒ v(2) = 2 + 12 = 14 ms⁻¹।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">4.</span> মুক্তভাবে পড়ন্ত বস্তুর 5th ও 10th সেকেন্ডে অতিক্রান্ত দূরত্বের অনুপাত কত?</div>
+        <div class="options">
+            <div class="option">A) 1 : 2</div>
+            <div class="option correct">B) 9 : 19</div>
+            <div class="option">C) 25 : 100</div>
+            <div class="option">D) 5 : 10</div>
+        </div>
+        <div class="explanation">💡 t-তম সেকেন্ডে দূরত্ব h_t ∝ (2t - 1)। অনুপাত = (2×5 - 1) : (2×10 - 1) = 9 : 19।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">5.</span> A·B = |A×B| হলে ভেক্টরদ্বয়ের মধ্যবর্তী কোণ θ = ?</div>
+        <div class="options">
+            <div class="option correct">A) 45°</div>
+            <div class="option">B) 90°</div>
+            <div class="option">C) 0°</div>
+            <div class="option">D) সবগুলো সত্য</div>
+        </div>
+        <div class="explanation">💡 AB cosθ = AB sinθ ⇒ tanθ = 1 ⇒ θ = 45°।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">6.</span> |A + B| = |A - B| হলে ভেক্টরদ্বয়ের মধ্যবর্তী কোণ θ = ?</div>
+        <div class="options">
+            <div class="option">A) 0°</div>
+            <div class="option">B) 30°</div>
+            <div class="option">C) 45°</div>
+            <div class="option correct">D) 90°</div>
+        </div>
+        <div class="explanation">💡 |A+B|² = |A-B|² ⇒ 4AB cosθ = 0 ⇒ θ = 90°।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">7.</span> কেন্দ্রমুখী ত্বরণ 4 ms⁻² এবং বেগ 20 ms⁻¹ হলে বৃত্তাকার পথের ব্যাসার্ধ কত?</div>
+        <div class="options">
+            <div class="option">A) 200 m</div>
+            <div class="option correct">B) 100 m</div>
+            <div class="option">C) 400 m</div>
+            <div class="option">D) 300 m</div>
+        </div>
+        <div class="explanation">💡 a_c = v²/r ⇒ r = v²/a_c = 400 / 4 = 100 m।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">8.</span> বেগের দক্ষিণ ও পশ্চিম অংশের মান যথাক্রমে 6 ms⁻¹ এবং 8 ms⁻¹ হলে লব্ধি বেগ কত?</div>
+        <div class="options">
+            <div class="option">A) 2 ms⁻¹</div>
+            <div class="option">B) 14 ms⁻¹</div>
+            <div class="option correct">C) 10 ms⁻¹</div>
+            <div class="option">D) 7 ms⁻¹</div>
+        </div>
+        <div class="explanation">💡 যেহেতু দিক দুটি পরস্পরের সাথে 90° কোণে অবস্থিত, v = √(6² + 8²) = 10 ms⁻¹।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">9.</span> সর্বনিম্ন দূরত্বে নদী পার হওয়ার ক্ষেত্রে লব্ধি বেগ কত?</div>
+        <div class="options">
+            <div class="option">A) u + v</div>
+            <div class="option correct">B) √(v² - u²)</div>
+            <div class="option">C) √(v² + u²)</div>
+            <div class="option">D) v - u</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">11.</span> A ও B উভয় ভেক্টরের উপর লম্ব একক ভেক্টর কোনটি?</div>
+        <div class="options">
+            <div class="option">A) A × B</div>
+            <div class="option">B) (A · B) / |A|</div>
+            <div class="option">C) (A × B) / |A|</div>
+            <div class="option correct">D) ± (A × B) / |A × B|</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">12.</span> কোনো ভেক্টরের শীর্ষবিন্দু ও পাদবিন্দু একই হলে ভেক্টরটি হবে—</div>
+        <div class="options">
+            <div class="option">A) বিপরীত ভেক্টর</div>
+            <div class="option correct">B) নাল ভেক্টর</div>
+            <div class="option">C) সমরেখ ভেক্টর</div>
+            <div class="option">D) স্বাধীন ভেক্টর</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">14.</span> আনুভূমিকের সাথে θ কোণে v₀ আদিবেগে প্রক্ষিপ্ত বস্তুর ক্ষেত্রে x/t এর মান কত?</div>
+        <div class="options">
+            <div class="option correct">A) v₀ cosθ</div>
+            <div class="option">B) v₀ sinθ</div>
+            <div class="option">C) 2v₀ cosθ</div>
+            <div class="option">D) v₀</div>
+        </div>
+        <div class="explanation">💡 আনুভূমিক বেগ v_x = v₀ cosθ সর্বদা ধ্রুবক থাকে।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">15.</span> একটি ভেক্টরকে সর্বোচ্চ কয়টি উপাংশে ভাগ করা যায়?</div>
+        <div class="options">
+            <div class="option correct">A) অসংখ্য</div>
+            <div class="option">B) তিনটি</div>
+            <div class="option">C) দুটি</div>
+            <div class="option">D) ছয়টি</div>
+        </div>
+    </div>
+
+    <!-- Chemistry Section -->
+    <div class="section-title"> Chemistry</div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">16.</span> V₁ আয়তনের M₁ ঘনমাত্রার দ্রবণের সাথে V₂ আয়তনের M₂ দ্রবণ মিশালে মিশ্রণের ঘনমাত্রা M = ?</div>
+        <div class="options">
+            <div class="option">A) M₁V₁ + M₂V₂</div>
+            <div class="option correct">B) (M₁V₁ + M₂V₂) / (V₁ + V₂)</div>
+            <div class="option">C) (V₁ + V₂) / (M₁V₁ + M₂V₂)</div>
+            <div class="option">D) None</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">17.</span> STP-তে 10 g CaCO₃ হতে কত লিটার CO₂ গ্যাস পাওয়া যায়?</div>
+        <div class="options">
+            <div class="option">A) 22.4 L</div>
+            <div class="option correct">B) 2.24 L</div>
+            <div class="option">C) 1.12 L</div>
+            <div class="option">D) 4.48 L</div>
+        </div>
+        <div class="explanation">💡 100 g CaCO₃ → 22.4 L CO₂ ⇒ 10 g CaCO₃ → 2.24 L CO₂।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">18.</span> নিচের কোনটি জারণ-বিজারণ বিক্রিয়া নয়?</div>
+        <div class="options">
+            <div class="option">A) Zn + CuSO₄ → ZnSO₄ + Cu</div>
+            <div class="option">B) 2FeCl₂ + Cl₂ → 2FeCl₃</div>
+            <div class="option">C) 2H₂ + O₂ → 2H₂O</div>
+            <div class="option correct">D) HCl + NaOH → NaCl + H₂O</div>
+        </div>
+        <div class="explanation">💡 প্রশমন বিক্রিয়ায় জারণ সংখ্যার কোনো পরিবর্তন হয় না।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">19.</span> সেমিমাইক্রো পদ্ধতিতে H₂S গ্যাসের বিকল্প হিসেবে ব্যবহৃত হয় কোনটি?</div>
+        <div class="options">
+            <div class="option">A) Na₂S</div>
+            <div class="option">B) CS₂</div>
+            <div class="option correct">C) থাইওঅ্যাসিটামাইড (CH₃CSNH₂)</div>
+            <div class="option">D) NH₄HS</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">20.</span> aKMnO₄ + bH₂SO₄ + cFeSO₄ → ... সমীকরণে প্রথম ৩টি সহগ (a, b, c) যথাক্রমে—</div>
+        <div class="options">
+            <div class="option">A) 4, 1, 2</div>
+            <div class="option">B) 1, 3, 3</div>
+            <div class="option">C) 4, 2, 1</div>
+            <div class="option correct">D) 2, 8, 10</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">21.</span> A = 0.4, ε = 400 L mol⁻¹ cm⁻¹, l = 1 cm হলে দ্রবণের ঘনমাত্রা (c) কত?</div>
+        <div class="options">
+            <div class="option correct">A) 1 × 10⁻³ M</div>
+            <div class="option">B) 1 × 10⁻² M</div>
+            <div class="option">C) 1 × 10⁻⁴ M</div>
+            <div class="option">D) 0.1 M</div>
+        </div>
+        <div class="explanation">💡 c = A / (ε·l) = 0.4 / (400 × 1) = 0.001 M = 10⁻³ M।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">22.</span> নিচের কোনটি গ্যাসীয় জারক হিসেবে কাজ করে না?</div>
+        <div class="options">
+            <div class="option correct">A) H₂S</div>
+            <div class="option">B) Cl₂</div>
+            <div class="option">C) O₃</div>
+            <div class="option">D) F₂</div>
+        </div>
+        <div class="explanation">💡 H₂S একটি তীব্র বিজারক পদার্থ।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">24.</span> Na₂S₄O₆ যৌগে সালফারের (S) জারণ সংখ্যা কত?</div>
+        <div class="options">
+            <div class="option">A) +2</div>
+            <div class="option">B) +2.5</div>
+            <div class="option">C) +3</div>
+            <div class="option correct">D) +2.5</div>
+        </div>
+        <div class="explanation">💡 2(+1) + 4x + 6(-2) = 0 ⇒ 4x = 10 ⇒ x = +2.5।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">26.</span> STP-তে 0.2 mol CO₂ গ্যাসের আয়তন কত?</div>
+        <div class="options">
+            <div class="option">A) 2.24 L</div>
+            <div class="option">B) 11.2 L</div>
+            <div class="option correct">C) 4.48 L</div>
+            <div class="option">D) 22.4 L</div>
+        </div>
+        <div class="explanation">💡 V = 0.2 × 22.4 = 4.48 L।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">28.</span> মিথাইল অরেঞ্জ অম্লীয় মাধ্যমে কোন বর্ণ ধারণ করে?</div>
+        <div class="options">
+            <div class="option">A) কমলা</div>
+            <div class="option">B) হলুদ</div>
+            <div class="option">C) নীল</div>
+            <div class="option correct">D) লাল</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">30.</span> নিচের কোনটি সেকেন্ডারি স্ট্যান্ডার্ড পদার্থ?</div>
+        <div class="options">
+            <div class="option">A) Na₂CO₃</div>
+            <div class="option">B) K₂Cr₂O₇</div>
+            <div class="option correct">C) KMnO₄</div>
+            <div class="option">D) H₂C₂O₄</div>
+        </div>
+    </div>
+
+    <!-- Mathematics Section -->
+    <div class="section-title"> Higher Mathematics</div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">31.</span> x + y + 1 = 0 এবং x - y + 1 = 0 রেখাদ্বয়ের মধ্যবর্তী কোণ কত?</div>
+        <div class="options">
+            <div class="option">A) 30°</div>
+            <div class="option">B) 45°</div>
+            <div class="option">C) 60°</div>
+            <div class="option correct">D) 90°</div>
+        </div>
+        <div class="explanation">💡 m₁ × m₂ = (-1) × (1) = -1, তাই রেখা দুটি লম্ব।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">32.</span> 3x - 4y + 7 = 0 রেখার সাথে লম্ব রেখার ঢাল (Slope) কত?</div>
+        <div class="options">
+            <div class="option">A) 3/4</div>
+            <div class="option">B) 4/3</div>
+            <div class="option">C) -3/4</div>
+            <div class="option correct">D) -4/3</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">34.</span> (a, 0), (0, b) এবং (1, 1) বিন্দুত্রয় সমরেখ হলে কোনটি সঠিক?</div>
+        <div class="options">
+            <div class="option">A) a + b = 1</div>
+            <div class="option">B) a - b = 1</div>
+            <div class="option">C) ab = 1</div>
+            <div class="option correct">D) 1/a + 1/b = 1</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">35.</span> মূলবিন্দু এবং x + y = 4 ও x - y = 2 এর ছেদবিন্দুগামী রেখার সমীকরণ—</div>
+        <div class="options">
+            <div class="option">A) x + 3y = 0</div>
+            <div class="option">B) 3x - y = 0</div>
+            <div class="option correct">C) x - 3y = 0</div>
+            <div class="option">D) x + y = 0</div>
+        </div>
+        <div class="explanation">💡 ছেদবিন্দু (3, 1)। মূলবিন্দুগামী রেখা y = (1/3)x ⇒ x - 3y = 0।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">36.</span> সামান্তরিকের তিনটি ক্রমিক শীর্ষ (1, 2), (2, 4) ও (4, 5) হলে ৪র্থ শীর্ষ—</div>
+        <div class="options">
+            <div class="option">A) (5, 3)</div>
+            <div class="option correct">B) (3, 3)</div>
+            <div class="option">C) (3, 5)</div>
+            <div class="option">D) (2, 3)</div>
+        </div>
+        <div class="explanation">💡 x₄ = 1 + 4 - 2 = 3, y₄ = 2 + 5 - 4 = 3।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">38.</span> k এর কোন মানের জন্য 2x + 3y = 5 এবং 4x + ky = 10 এর অসংখ্য সমাধান থাকবে?</div>
+        <div class="options">
+            <div class="option">A) k = 2</div>
+            <div class="option">B) k = 3</div>
+            <div class="option">C) k = 4</div>
+            <div class="option correct">D) k = 6</div>
+        </div>
+        <div class="explanation">💡 2/4 = 3/k ⇒ k = 6।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">42.</span> (1, √3) এবং (2, 2√3) সংযোগকারী রেখা x-অক্ষের সাথে কত কোণ তৈরি করে?</div>
+        <div class="options">
+            <div class="option">A) 30°</div>
+            <div class="option">B) 45°</div>
+            <div class="option correct">C) 60°</div>
+            <div class="option">D) 90°</div>
+        </div>
+        <div class="explanation">💡 tanθ = (2√3 - √3) / (2 - 1) = √3 ⇒ θ = 60°।</div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">45.</span> r = 2a cosθ এর কার্তেসীয় সমীকরণ কোনটি?</div>
+        <div class="options">
+            <div class="option">A) x² + y² = 2a</div>
+            <div class="option">B) x² + y² - 2ay = 0</div>
+            <div class="option">C) x² - y² = 2ax</div>
+            <div class="option correct">D) x² + y² - 2ax = 0</div>
+        </div>
+    </div>
+
+    <!-- Biology Section -->
+    <div class="section-title"> Biology</div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">46.</span> মহাধমনি (Aorta) কোথায় উৎপন্ন হয়?</div>
+        <div class="options">
+            <div class="option">A) ডান অ্যাট্রিয়াম</div>
+            <div class="option correct">B) বাম নিলয় (Left Ventricle)</div>
+            <div class="option">C) ডান নিলয়</div>
+            <div class="option">D) সিস্টেমিক ধমনি</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">47.</span> মানবদেহের কোন কোন অঙ্গে লোহিত রক্তকণিকা (RBC) ধ্বংস হয়?</div>
+        <div class="options">
+            <div class="option">A) প্লীহা ও অগ্ন্যাশয়</div>
+            <div class="option">B) অস্থিমজ্জা ও যকৃৎ</div>
+            <div class="option">C) যকৃৎ ও বৃক্ক</div>
+            <div class="option correct">D) যকৃৎ ও প্লীহা</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">48.</span> বুকের ব্যথা ঘাড়, চোয়াল ও বাম বাহুতে ছড়িয়ে পড়ে কোন অবস্থায়?</div>
+        <div class="options">
+            <div class="option">A) নিউমোনিয়া</div>
+            <div class="option">B) পেরিকার্ডাইটিস</div>
+            <div class="option">C) প্লুরিসি</div>
+            <div class="option correct">D) অ্যানজাইনা (Angina)</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">50.</span> রক্ত তঞ্চন বা ক্লটিং ফ্যাক্টর II (Factor II)-এর নাম কী?</div>
+        <div class="options">
+            <div class="option correct">A) প্রোথ্রম্বিন (Prothrombin)</div>
+            <div class="option">B) থ্রম্বোপ্লাস্টিন</div>
+            <div class="option">C) অ্যান্টিহিমোফিলিক ফ্যাক্টর</div>
+            <div class="option">D) ফাইব্রিনোজেন</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">51.</span> 'লোহিত রক্তকণিকার কবরস্থান' (Graveyard of RBCs) কাকে বলে?</div>
+        <div class="options">
+            <div class="option">A) যকৃৎ</div>
+            <div class="option">B) অগ্ন্যাশয়</div>
+            <div class="option correct">C) প্লীহা (Spleen)</div>
+            <div class="option">D) থাইমাস</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">53.</span> ফ্যাগোসাইটোসিস প্রক্রিয়ায় জীবাণু ভক্ষণ করে কোনটি?</div>
+        <div class="options">
+            <div class="option correct">A) নিউট্রোফিল (Neutrophil)</div>
+            <div class="option">B) বেসোফিল</div>
+            <div class="option">C) লিম্ফোসাইট</div>
+            <div class="option">D) লাইসোজোম</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">54.</span> স্বরযন্ত্রের (Larynx) সবচেয়ে বড় তরুণাস্থি কোনটি?</div>
+        <div class="options">
+            <div class="option correct">A) থাইরয়েড (Thyroid)</div>
+            <div class="option">B) অ্যারোটিনয়েড</div>
+            <div class="option">C) ক্রিকয়েড</div>
+            <div class="option">D) কনিকুলেট</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">56.</span> রেসিড্যুয়াল ভলিউম (Residual Volume)-এর স্বাভাবিক মান কত?</div>
+        <div class="options">
+            <div class="option">A) 4500 mL</div>
+            <div class="option correct">B) 1500 mL</div>
+            <div class="option">C) 500 mL</div>
+            <div class="option">D) 6000 mL</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">57.</span> করোনারি সাইনাস ও ডান অ্যাট্রিয়ামের সংযোগস্থলে কোন কপাটিকা থাকে?</div>
+        <div class="options">
+            <div class="option">A) ট্রাইকাসপিড কপাটিকা</div>
+            <div class="option">B) ইউস্টেসিয়ান কপাটিকা</div>
+            <div class="option correct">C) থিবেসিয়ান কপাটিকা</div>
+            <div class="option">D) মাইট্রাল কপাটিকা</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header"><span class="q-num">60.</span> মাতৃগর্ভে ভ্রূণ অবস্থায় কততম সপ্তাহ থেকে হৃদস্পন্দন শুরু হয়?</div>
+        <div class="options">
+            <div class="option correct">A) ৪র্থ সপ্তাহ (4th week)</div>
+            <div class="option">B) ৩য় সপ্তাহ</div>
+            <div class="option">C) ৫ম সপ্তাহ</div>
+            <div class="option">D) ৭ম সপ্তাহ</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
